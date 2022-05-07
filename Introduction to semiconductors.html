@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <style type="text/css">
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            padding-left: 3%;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .topnav a.active {
+            background-color: rgb(178, 178, 182);
+            color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+        
+        .container-fluid {
+            background-color: navy;
+        }
+        
+        .container-fluid>h1 {
+            text-align: center;
+            color: whitesmoke;
+        }
+        
+        .header {
+            margin-left: 12%;
+            color: navy;
+            font-size: 20px;
+        }
+        
+        .header1 {
+            text-align: center;
+            color: navy;
+            font-size: 23px;
+            font-style: oblique;
+        }
+        
+        .container {
+            font-size: 15px;
+            word-spacing: 4px;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .jumbotron>h3 {
+            font-size: 15px;
+            word-spacing: 4px;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="solution.html">Solutions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <br>
+
+
+    <div class="container-fluid">
+        <h1> Semiconductors </h1>
+    </div>
+
+    <br>
+    <div class="container">
+        <p1>
+            A semiconductor material has an electrical conductivity value falling between that of a conductor, such as metallic copper, and an insulator, such as glass. Its resistivity falls as its temperature rises; metals behave in the opposite way. Its conducting
+            properties may be altered in useful ways by introducing impurities ("doping") into the crystal structure. When two differently-doped regions exist in the same crystal, a semiconductor junction is created. The behavior of charge carriers, which
+            include electrons, ions and electron holes, at these junctions is the basis of diodes, transistors and most modern electronics. Some examples of semiconductors are silicon, germanium, gallium arsenide, and elements near the so-called "metalloid
+            staircase" on the periodic table. After silicon, gallium arsenide is the second most common semiconductor and is used in laser diodes, solar cells, microwave-frequency integrated circuits, and others. Silicon is a critical element for fabricating
+            most electronic circuits. Semiconductor devices can display a range of useful properties, such as passing current more easily in one direction than the other, showing variable resistance, and sensitivity to light or heat. Because the electrical
+            properties of a semiconductor material can be modified by doping, or by the application of electrical fields or light, devices made from semiconductors can be used for amplification, switching, and energy conversion
+        </p1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <p>
+            Types of semiconductors:
+            <br> 1)P Type Semiconductors
+            <br> 2)N Type Semiconductors
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="header">
+        1) P type Semiconductors
+        <br>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <p>
+            In a pure (intrinsic) Si or Ge semiconductor, each nucleus uses its four valence electrons to form four covalent bonds with its neighbors (see figure below). Each ionic core, consisting of the nucleus and non-valent electrons, has a net charge of +4,
+            and is surrounded by 4 valence electrons. Since there are no excess electrons or holes In this case, the number of electrons and holes present at any given time will always be equal.
+        </p>
+        <img id="i1" src="C:\Users\hp\Downloads\New folder\img1.jpg"><br>
+
+        <p>
+            Now, if one of the atoms in the semiconductor lattice is replaced by an element with three valence electrons, such as a Group 3 element like Boron (B) or Gallium (Ga), the electron-hole balance will be changed. This impurity will only be able to contribute
+            three valence electrons to the lattice, therefore leaving one excess hole (see figure below). Since holes will "accept" free electrons, a Group 3 impurity is also called an acceptor.
+        </p>
+        <img id="i2" src="C:\Users\hp\Downloads\New folder\img2.jpg">
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="header">
+        2) N Type Semiconductors
+    </div>
+    <br>
+    <div class="container">
+        <p1>
+            In addition to replacing one of the lattice atoms with a Group 3 atom, we can also replace it by an atom with five valence electrons, such as the Group 5 atoms arsenic (As) or phosphorus (P). In this case, the impurity adds five valence electrons to the
+            lattice where it can only hold four. This means that there is now one excess electron in the lattice (see figure below). Because it donates an electron, a Group 5 impurity is called a donor. Note that the material remains electrically neutral.Donor
+            impurities donate negatively charged electrons to the lattice, so a semiconductor that has been doped with a donor is called an n-type semiconductor; "n" stands for negative. Free electrons outnumber holes in an n-type material, so the electrons
+            are the majority carriers and holes are the minority carriers.<br>
+        </p1>
+        <img id="i" src="C:\Users\hp\Downloads\New folder\img3.jpg">
+    </div>
+    <br>
+    <br>
+
+    <div class="header1">
+        Doping In Semiconductors
+    </div>
+    <br>
+    <div class="container">
+        <p>
+            Pure Silicon or Germanium are rarely used as semiconductors. Practically usable semiconductors must have controlled quantity of impurities added to them. Addition of impurity will change the conductor ability and it acts as a semiconductor. The process
+            of adding an impurity to an intrinsic or pure material is called doping and the impurity is called a dopant. After doping, an intrinsic material becomes an extrinsic material. Practically only after doping these materials become usable. When
+            an impurity is added to silicon or germanium without modifying the crystal structure, an N-type material is produced. In some atoms, electrons have five electrons in their valence band such as arsenic (As) and antimony (Sb). Doping of silicon
+            with either impurity must not change the crystal structure or the bonding process. The extra electron of impurity atom does not take part in a covalent bonding. These electrons are loosely held together by their originator atoms. The following
+            figure shows alteration of silicon crystal with the addition of an impurity atom.
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <div class="header1">
+        Effects Of Doping
+    </div>
+    <br>
+    <div class="header">
+        1) The effect of doping on an N-type material is as follows:
+    </div>
+    <br>
+
+    <div class="container">
+        <p>
+            <br> -On addition of Arsenic to pure Silicon, the crystal becomes an N-type material.<br> -Arsenic atom has additional electrons or negative charges that do not take part in the process of covalent bonding.<br> -These impurities give up or
+            donate, one electron to the crystal and they are referred to as donor impurities.<br> -An N-type material has extra or free electrons than an intrinsic material.<br> -An N-type material is not negatively charged. Actually all of its atoms
+            are all electrically neutral.<br> -These extra electrons do not take part in the covalent bonding process. They are free to move about through the crystal structure.<br> -An N-type extrinsic silicon crystal will go into conduction with only
+            0.005eV of energy applied.<br> -Only 0.7eV is required to move electrons of intrinsic crystal from the valence band into the conduction band.<br> Normally, electrons are considered to be the majority current carriers in this type of crystal
+            and holes are the minority current carriers. The quantity of donor material added to Silicon finds out the number of majority current carriers in its structure.The number of electrons in an N-type silicon is many times greater than the electron-hole
+            pairs of intrinsic silicon. At room temperature, there is a firm difference in the electrical conductivity of this material. There are abundant current carriers to take part in the current flow. The flow of current is achieved mostly by electrons
+            in this type of material. Therefore, an extrinsic material becomes a good electrical conductor.<br>
+        </p>
+        <img id="i3" src="C:\Users\hp\Downloads\New folder\doping.jpg">
+    </div>
+
+    <br>
+    <div class="header">
+        2) The effect of doping on an P-type material is as follows:
+    </div>
+    <br>
+    <div class="container">
+        <p>
+            <br>-When Indium (In) or Gallium (Ga) is added to pure silicon, a P-type material is formed.<br> -This type of dopant material has three valence electrons. They are eagerly looking for a fourth electron.<br> -In P type material, each hole
+            can be filled with an electron. To fill this hole area, very less energy is required by electrons from the neighboring covalent bonded groups.<br> -Silicon is typically doped with doping material in the range of 1 to 106. This means that P
+            material will have much more holes than the electron-hole pairs of pure silicon.<br> -At room temperature, there is a very determined characteristic difference in the electrical conductivity of this material.<br> -The following figure shows
+            how the crystal structure of Silicon is altered when doped with an acceptor element — in this case, Indium. A piece of P material is not positively charged. Its atoms are primarily all electrically neutral. There are, however, holes in the
+            covalent structure of many atom groups. When an electron moves in and fills a hole, the hole becomes void. A new hole is created in the bonded group where the electron left. Hole movement in effect is the result of electron movement. A P-type
+            material will go into conduction with only 0.05 eV of energy applied.<br>
+
+        </p>
+        <img id="i4" src="C:\Users\hp\Downloads\New folder\pdoping.jpg">
+    </div>
+</body>
+
+</html>
